@@ -1,0 +1,13 @@
+.console {
+    margin: 30px auto;
+    width: 400px;
+    text-align: center;
+    background-color: silver;
+    border-radius: 10px
+
+}
+
+form {
+    display: inline-block;
+    margin-bottom: 10px;
+}
