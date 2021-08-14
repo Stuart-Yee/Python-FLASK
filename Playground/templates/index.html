@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Index</title>
+    <style>
+        .square {
+        height: 100px;
+        width: 100px;
+        background-color: {{color}};
+        margin: 2px;
+        border: solid 2px black;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 100px
+        }
+
+        #boxbox {
+        width: 600px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        }
+
+        h1, p {
+        text-align: center;
+        margin: 5px;
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    {% if num%2 == 0: %}
+    <p>EVEN I can play this game...</p>
+    {% else: %}
+    <p>What an ODD game...</p>
+    {% endif %}
+    <div id="boxbox">
+        {% for x in range(0, num): %}
+        <div class="square"></div>
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>
