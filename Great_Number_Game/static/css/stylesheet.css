@@ -1,0 +1,55 @@
+.header {
+    text-align: center;
+}
+
+
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.reveal {
+    display: block;
+}
+
+.box {
+    color: gold;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.guessing {
+    margin: 2px auto;
+    display: flex;
+    background-color: rgb(42,42,42);
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.guessing *{
+    margin: 10px;
+}
+
+.guessing label{
+    color: gold;
+}
+

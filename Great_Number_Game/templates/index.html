@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/stylesheet.css')}}">
+    <meta charset="UTF-8">
+    <title>Great Number Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to the Great Number Game!!!</h1>
+            <h2>I am thinking of a number between 1 and 100</h2>
+            <h2>Take a guess!</h2>
+        </div>
+        <div class="box {{show}} {{color}}">
+            <!-- some shit goes here when you guess-->
+            <h2>{{condition}}</h2>
+            <h2>Guesses: {{tries}}</h2>
+            <form action="/destroy" class="{{reset}}">
+                <button class="btn btn-primary">Play Again!</button>
+            </form>
+        </div>
+
+
+        <div class="guessing">
+            <form action="/guess" method="post">
+                <label for="guess">Take a guess!!!</label>
+                <input name="guess">
+                <button class="btn btn-warning">Guess</button>
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
