@@ -10,14 +10,31 @@
 <div class="container">
     <div class="console">
         <h1>Counter</h1>
-        <p>Visits: {{counter}}</p>
+        <p>Counter: {{counter}}</p>
+        <p>Visits: {{loads}}</p>
         <form action="/twice" method="post">
             <button class="btn btn-primary">Two Visits</button>
         </form>
-        <form action="/clear" method="post">
+        <form action="/reset" method="post">
             <button class="btn btn-danger">Clear Counter</button>
         </form>
     </div>
+    <form action="/custom_count" method="post" class="console">
+        <table>
+            <tr>
+                <td><label>Increment Amount</label></td>
+            </tr>
+            <tr>
+                <td><input name="increment"></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-warning">Submit</button></td>
+            </tr>
+        </table>
+
+
+
+    </form>
 </div>
 </body>
 </html>
